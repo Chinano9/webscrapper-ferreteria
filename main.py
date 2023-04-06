@@ -56,13 +56,11 @@ def main():
     all_articles = list()
     # Extracts articles from every page
     for page in range(1, page_numbers):
-        url = 'https://hagalo.mx/2805-ferreteria-y-herrajes?page={page}'
+        url = URL+'?page={page}'
         article_list = extract_articles(url.format(page=page), page, page_numbers)
         for article in article_list:
             all_articles.append(article)
     print(all_articles)
-
-    print(page_numbers)
 
 if __name__ == '__main__':
     main()
