@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from urllib.request import urlopen
-from bs4 import BeautifulSoup, ResultSet
+from bs4 import BeautifulSoup
 
 URL = 'https://hagalo.mx/2805-ferreteria-y-herrajes'
 
